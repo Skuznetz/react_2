@@ -36,7 +36,7 @@ render: function() {
 return (
 <div className="app">
 Всем привет, я компонент App! Я умею отображать новости.
-<News />
+<News data={my_news} /> {/*добавили свойство data */}
 <Comments />
 </div>
 );
