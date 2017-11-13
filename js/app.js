@@ -1,3 +1,18 @@
+var my_news = [
+{
+author: 'Саша Пушкин',
+text: 'В четверг, четвертого числа...'
+},
+{
+author: 'Просто Петя',
+text: 'Считаю, что $ должен стоить 35 рублей!'
+},
+{
+author: 'Гость',
+text: 'Бесплатно. Скачать. Лучший сайт - http://localhost:3000'
+}
+];
+
 var News = React.createClass({
 render: function() {
 return (
