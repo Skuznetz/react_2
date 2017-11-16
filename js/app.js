@@ -16,7 +16,9 @@ text: 'Бесплатно. Скачать. Лучший сайт - http://localh
 var News = React.createClass({
 render: function() {
 var data = this.props.data;
-var newsTemplate = data.map(function(item, index) {
+var newsTemplate;
+if (data.length > 0) {
+newsTemplate = data.map(function(item, index) {
 return (
 <div key={index}>
 <p className="news__author">{item.author}:</p>
@@ -24,9 +26,13 @@ return (
 </div>
 )
 })
+} else {
+newsTemplate = <p>К сожалению новостей нет</p>
+}
 return (
 <div className="news">
 {newsTemplate}
+<strong>Всего новостей: {data.length}</strong>
 </div>
 );
 }
