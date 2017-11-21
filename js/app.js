@@ -32,8 +32,7 @@ if (data.length > 0) {
 newsTemplate = data.map(function(item, index) {
 return (
 <div key={index}>
-<p className="news__author">{item.author}:</p>
-<p className="news__text">{item.text}</p>
+<Article data={item} />
 </div>
 )
 })
