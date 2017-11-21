@@ -42,7 +42,7 @@ newsTemplate = <p>К сожалению новостей нет</p>
 return (
 <div className="news">
 {newsTemplate}
-<strong className={data.length > 0 ? '':'none'}>Всего новостей: {data.length}</strong>
+<strong className={'news__count ' + (data.length > 0 ? '':'none')}>Всего новостей: {data.length}</strong>
 </div>
 );
 }
