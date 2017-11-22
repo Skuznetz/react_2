@@ -25,6 +25,10 @@ return (
 }
 });
 var News = React.createClass({
+  var News = React.createClass({
+propTypes: {
+data: React.PropTypes.array.isRequired
+},
 render: function() {
 var data = this.props.data;
 var newsTemplate;
