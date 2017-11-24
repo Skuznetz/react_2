@@ -57,10 +57,9 @@ var App = React.createClass({
     render: function() {
         return ( <
             div className = "app" >
-            <
-            h3 > Новости < /h3> <
+            <h3>Новости</h3> <
             News data = { my_news }
-            /> {/ * добавили свойство data * /} < /
+            /> < /
             div >
         );
     }
