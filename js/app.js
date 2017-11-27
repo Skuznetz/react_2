@@ -1,16 +1,16 @@
 var my_news = [{
         author: 'Саша Пушкин',
-        text: 'В четверг, четвертого числа...'
+        text: 'В четверг, четвертого числа...',
         bigText: 'в четыре с четвертью часа четыре чёрненьких чумазеньких чертёнка чертили чёрными чернилами чертёж.'
     },
     {
         author: 'Просто Петя',
-        text: 'Считаю, что $ должен стоить 35 рублей!'
+        text: 'Считаю, что $ должен стоить 35 рублей!',
         bigText: 'А евро 42!'
     },
     {
         author: 'Гость',
-        text: 'Бесплатно. Скачать. Лучший сайт - http://localhost:3000'
+        text: 'Бесплатно. Скачать. Лучший сайт - http://localhost:3000',
         bigText: 'На самом деле платно, просто нужно прочитать очень длинное лицензионное соглашение'
     }
 ];
@@ -24,8 +24,8 @@ var Article = React.createClass({
     },
     render: function() {
         var author = this.props.data.author,
-            text = this.props.data.text;
-        bigText = this.props.data.bigText;
+            text = this.props.data.text,
+            bigText = this.props.data.bigText;
         return ( <
             div className = 'article' >
             <
