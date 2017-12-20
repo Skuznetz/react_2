@@ -27,6 +27,10 @@ var Article = React.createClass({
         visible: false
         };
     },
+    readmoreClick: function(e) {
+        e.preventDefault();
+        this.setState({visible: true});
+        },
     render: function() {
         var author = this.props.data.author,
             text = this.props.data.text,
