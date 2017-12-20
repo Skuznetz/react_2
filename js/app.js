@@ -22,6 +22,11 @@ var Article = React.createClass({
             bigText: React.PropTypes.string.isRequired
         })
     },
+    getInitialState: function() {
+        return {
+        visible: false
+        };
+    },
     render: function() {
         var author = this.props.data.author,
             text = this.props.data.text,
