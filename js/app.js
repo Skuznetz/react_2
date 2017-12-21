@@ -41,7 +41,7 @@ var Article = React.createClass({
             <
             p className = 'news__author' > { author }: < /p> <
             p className = 'news__text' > { text } < /p> 
-            <a href="#" className={'news__readmore ' + (visible ? 'none': '')}>Подробнее</a>
+            <a href="#" onClick={this.readmoreClick} className={'news__readmore ' + (visible ? 'none': '')}>Подробнее</a>
              <p className={'news__big-text ' + (visible ? '': 'none')}>{bigText}</p>
              < /
             div >
