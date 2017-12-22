@@ -39,12 +39,11 @@ var Article = React.createClass({
         return ( <
             div className = 'article' >
             <
-            p className = 'news__author' > { author }: < /p> <
-            p className = 'news__text' > { text } < /p> 
+            p className = 'news__author' > { author }: </p> <
+            p className = 'news__text' > { text } </p> 
             <a href="#" onClick={this.readmoreClick} className={'news__readmore ' + (visible ? 'none': '')}>Подробнее</a>
              <p className={'news__big-text ' + (visible ? '': 'none')}>{bigText}</p>
-             < /
-            div >
+             </div >
         )
     }
 });
@@ -67,7 +66,7 @@ var News = React.createClass({
                 )
             })
         } else {
-            newsTemplate = < p > К сожалению новостей нет < /p>
+            newsTemplate = <p> К сожалению новостей нет </p>
         }
         return ( <
             div className = "news" > { newsTemplate } <
