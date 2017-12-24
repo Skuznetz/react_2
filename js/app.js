@@ -38,6 +38,9 @@ var Article = React.createClass({
             text = this.props.data.text,
             bigText = this.props.data.bigText,
             visible = this.state.visible;
+            
+        console.log('render',this);
+
         return ( <
             div className = 'article' >
             <
