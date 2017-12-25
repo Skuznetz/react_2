@@ -38,7 +38,7 @@ var Article = React.createClass({
             text = this.props.data.text,
             bigText = this.props.data.bigText,
             visible = this.state.visible;
-            
+
         console.log('render',this);
 
         return ( <
@@ -56,6 +56,15 @@ var News = React.createClass({
 
     propTypes: {
         data: React.PropTypes.array.isRequired
+    },
+
+    getInitialState: function() {
+        return {
+            counter: 0
+      }
+    },
+    onTotalNewsClick: function() {
+        this.setState({counter: ++this.state.counter });
     },
     render: function() {
         var data = this.props.data;
