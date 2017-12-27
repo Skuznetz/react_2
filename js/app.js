@@ -61,9 +61,7 @@ var News = React.createClass({
             counter: 0
       }
     },
-    onTotalNewsClick: function() {
-        this.setState({counter: ++this.state.counter });
-    },
+    
     render: function() {
         var data = this.props.data;
         var newsTemplate;
