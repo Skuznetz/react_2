@@ -96,6 +96,11 @@ myValue: ''
 onChangeHandler: function(e) {
 this.setState({myValue: e.target.value})
 },
+
+onBtnClickHandler: function() {
+alert(this.state.myValue);
+},
+
 render: function() {
 return (
 <input
