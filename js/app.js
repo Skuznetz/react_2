@@ -108,8 +108,8 @@ return (
 className='test-input'
 value={this.state.myValue}
 onChange={this.onChangeHandler}
-placeholder='введите значение'
-/>
+placeholder='введите значение' />
+<button onClick={this.onBtnClickHandler}>Показать alert</button>
 </div>
 );
 }
