@@ -90,7 +90,6 @@ var News = React.createClass({
 var TestInput = React.createClass({
 
 onBtnClickHandler: function() {
-console.log(this.refs);
 alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
 },
 
