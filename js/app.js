@@ -88,7 +88,9 @@ var News = React.createClass({
 
 // --- добавили test input ---
 var TestInput = React.createClass({
-
+  componentDidMount: function() { //ставим фокус в input
+ReactDOM.findDOMNode(this.refs.myTestInput).focus();
+},
 onBtnClickHandler: function() {
     console.log(this.refs);
 alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
