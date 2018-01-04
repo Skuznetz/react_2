@@ -24,15 +24,15 @@ var Article = React.createClass({
     },
     getInitialState: function() {
         return {
-        visible: false
+            visible: false
         };
     },
     readmoreClick: function(e) {
         e.preventDefault();
-        this.setState({visible: true},function() {
-        alert('Состояние изменилось');
+        this.setState({ visible: true }, function() {
+            alert('Состояние изменилось');
         });
-        },
+    },
     render: function() {
         var author = this.props.data.author,
             text = this.props.data.text,
@@ -42,11 +42,12 @@ var Article = React.createClass({
         return ( <
             div className = 'article' >
             <
-            p className = 'news__author' > { author }: </p> <
-            p className = 'news__text' > { text } </p> 
-            <a href="#" onClick={this.readmoreClick} className={'news__readmore ' + (visible ? 'none': '')}>Подробнее</a>
-             <p className={'news__big-text ' + (visible ? '': 'none')}>{bigText}</p>
-             </div >
+            p className = 'news__author' > { author }: < /p> <
+            p className = 'news__text' > { text } < /p>  <
+            a href = "#"
+            onClick = { this.readmoreClick } className = { 'news__readmore ' + (visible ? 'none' : '') } > Подробнее < /a> <
+            p className = { 'news__big-text ' + (visible ? '' : 'none') } > { bigText } < /p> <
+            /div >
         )
     }
 });
@@ -59,9 +60,9 @@ var News = React.createClass({
     getInitialState: function() {
         return {
             counter: 0
-      }
+        }
     },
-    
+
     render: function() {
         var data = this.props.data;
         var newsTemplate;
@@ -76,7 +77,7 @@ var News = React.createClass({
                 )
             })
         } else {
-            newsTemplate = <p> К сожалению новостей нет </p>
+            newsTemplate = < p > К сожалению новостей нет < /p>
         }
         return ( <
             div className = "news" > { newsTemplate } <
@@ -88,27 +89,28 @@ var News = React.createClass({
 
 // --- добавили test input ---
 var TestInput = React.createClass({
-  componentDidMount: function() { //ставим фокус в input
-ReactDOM.findDOMNode(this.refs.myTestInput).focus();
-},
-onBtnClickHandler: function() {
-    console.log(this.refs);
-alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
-},
+    componentDidMount: function() { //ставим фокус в input
+        ReactDOM.findDOMNode(this.refs.myTestInput).focus();
+    },
+    onBtnClickHandler: function() {
+        console.log(this.refs);
+        alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
+    },
 
-render: function() {
-return (
-<div>
-<input
-className='test-input'
-defaultValue=''
-placeholder='введите значение' 
-ref='myTestInput' 
-/>
-<button onClick={this.onBtnClickHandler} ref='alert_button' >Показать alert</button>
-</div>
-);
-}
+    render: function() {
+        return ( <
+            div >
+            <
+            input className = 'test-input'
+            defaultValue = ''
+            placeholder = 'введите значение'
+            ref = 'myTestInput' /
+            >
+            <
+            button onClick = { this.onBtnClickHandler } ref = 'alert_button' > Показать alert < /button> <
+            /div>
+        );
+    }
 });
 
 var App = React.createClass({
@@ -116,8 +118,8 @@ var App = React.createClass({
         return ( <
             div className = "app" >
             <
-            h3 > Новости < /h3> 
-            <TestInput /> {/* добавили вывод компонента */}<
+            h3 > Новости < /h3>  <
+            TestInput / > { /* добавили вывод компонента */ } <
             News data = { my_news }
             /> < /
             div >
