@@ -14,10 +14,9 @@ var my_news = [{
     }
 ];
         
-
-
+const opp = document.getElementById('root');
 
 ReactDOM.render( <
     App / > ,
-    document.getElementById('root')
+    opp)
 );
