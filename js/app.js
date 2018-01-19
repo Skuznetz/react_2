@@ -17,7 +17,10 @@ var my_news = [{
 
     }
 ];
-        
+
+var App = React.createClass({
+
+});   
 const opp = document.getElementById('root');
 
 ReactDOM.render( <
