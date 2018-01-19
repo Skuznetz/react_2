@@ -25,5 +25,4 @@ const opp = document.getElementById('root');
 
 ReactDOM.render( <
     App / > ,
-    opp)
-);
+    opp);
