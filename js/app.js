@@ -17,6 +17,9 @@ var my_news = [{
 
     }
 ];
+var News = React.createClass({
+
+});
 
 var App = React.createClass({
     render: function(){
@@ -26,6 +29,7 @@ var App = React.createClass({
             </div>);
     }
 });   
+
 const opp = document.getElementById('root');
 
 ReactDOM.render( <
