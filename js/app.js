@@ -20,7 +20,10 @@ var my_news = [{
 
 var App = React.createClass({
     render: function(){
-        
+        return (
+            <div className="app")>
+                 Привет
+            </div>
     }
 });   
 const opp = document.getElementById('root');
