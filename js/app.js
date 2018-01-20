@@ -23,7 +23,7 @@ var App = React.createClass({
         return (
             <div className="app")>
                  Привет
-            </div>
+            </div>);
     }
 });   
 const opp = document.getElementById('root');
