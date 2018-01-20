@@ -18,6 +18,12 @@ var my_news = [{
     }
 ];
 var News = React.createClass({
+    render: function(){
+        return (
+            <div className="news")>
+                Нет новостей
+            </div>
+    }
 
 });
 
