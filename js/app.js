@@ -30,7 +30,7 @@ var News = React.createClass({
         })
         return (
             <div className="news">
-                новости                
+            {newsTamplate}
             </div>);
     }
 
