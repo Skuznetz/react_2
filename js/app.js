@@ -21,7 +21,7 @@ var News = React.createClass({
     render: function(){
         return (
             <div className="news">
-                Нет новостей
+                новости                
             </div>);
     }
 
@@ -32,7 +32,7 @@ var App = React.createClass({
         return (
             <div className="app">
                  <h1>Привет</h1>
-                 <News />
+                 <News data = {my_news} />
             </div>);
     }
 });   
