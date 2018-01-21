@@ -20,9 +20,9 @@ var my_news = [{
 var News = React.createClass({
     render: function(){
         return (
-            <div className="news")>
+            <div className="news">
                 Нет новостей
-            </div>
+            </div>);
     }
 
 });
@@ -30,8 +30,9 @@ var News = React.createClass({
 var App = React.createClass({
     render: function(){
         return (
-            <div className="app")>
-                 Привет
+            <div className="app">
+                 <h1>Привет</h1>
+                 <News />
             </div>);
     }
 });   
@@ -39,5 +40,5 @@ var App = React.createClass({
 const opp = document.getElementById('root');
 
 ReactDOM.render( <
-    App / > ,
+    App /> ,
     opp);
