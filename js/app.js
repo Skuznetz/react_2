@@ -19,6 +19,8 @@ var my_news = [{
 ];
 var News = React.createClass({
     render: function(){
+        var data =this.props.data;
+        
         return (
             <div className="news">
                 новости                
