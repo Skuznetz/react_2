@@ -19,11 +19,11 @@ var my_news = [{
 ];
 var News = React.createClass({
     render: function(){
-        var data =this.props.data;
-        var newTamplate =data.map(function(item,index){
+        var data = this.props.data;
+        var newsTamplate = data.map(function(item,index){
             return (
                 <div key={index}>
-                <p className="news_author">{item.author}:
+                <p className="news_author">{item.author} :
                 </p>
                 <p className="news_text">{item.text}</p>
                 </div>)
@@ -41,7 +41,7 @@ var App = React.createClass({
         return (
             <div className="app">
                  <h1>Привет</h1>
-                 <News data = {my_news} />
+            <News data={my_news} />
             </div>);
     }
 });   
