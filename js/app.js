@@ -17,6 +17,11 @@ var my_news = [{
 
     }
 ];
+var Article = React.createClass({
+    render: function(){
+    
+    }
+});
 var News = React.createClass({
     render: function(){
         var data = this.props.data;
