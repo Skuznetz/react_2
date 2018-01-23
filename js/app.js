@@ -36,9 +36,8 @@ var News = React.createClass({
         newsTamplate = data.map(function(item,index){
             return (
                 <div key={index}>
-                <p className="news_author">{item.author} :
-                </p>
-                <p className="news_text">{item.text}</p>
+                <Article data={item} />
+                
                 </div>)})
         } else {
             newsTamplate = <p> К сожалению,новостей нет.</p>}
@@ -46,7 +45,7 @@ var News = React.createClass({
                 return (
             <div className="news">
             {newsTamplate}
-            <strong className={data.length > 0 ? '' : 'none'}>Всего новостей: {data.length}</strong>
+            <strong className={'news_count ' + (data.length > 0 ? '' : 'none')}>Всего новостей: {data.length}</strong>
             </div>);
     }
 
