@@ -19,7 +19,7 @@ var my_news = [{
 ];
 var Article = React.createClass({
     render: function(){
-    
+    var author = this.props.data.author;
     }
 });
 var News = React.createClass({
