@@ -55,7 +55,7 @@ var App = React.createClass({
     render: function(){
         return (
             <div className="app">
-                 <h1>Привет</h1>
+                 <h1>Новости</h1>
             <News data={my_news} />
             </div>);
     }
