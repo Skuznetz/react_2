@@ -31,6 +31,7 @@ var News = React.createClass({
         return (
             <div className="news">
             {newsTamplate}
+            <strong>Всего новостей: {data.length}</strong>
             </div>);
     }
 
