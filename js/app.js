@@ -11,12 +11,12 @@ var my_news = [{
     },
     {
         author: 'Гость',
-        text: 'Бесплатно. Скачать. Лучший сайт - http://localhost:3000'
-        
+        text: 'Бесплатно. Скачать. Лучший сайт - http://localhost:3000',
+        bigText: 'Ну не очень бесплатно'
     },
     {   author: 'Вася',
-        text: 'Московское время'
-
+        text: 'Московское время',
+        bigText: 'Кому сколько -5-00'
     }
 ];
 var Article = React.createClass({
