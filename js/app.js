@@ -30,6 +30,7 @@ var Article = React.createClass({
     render: function(){
     var author = this.props.data.author;
     var text = this.props.data.text;
+    var bigText = this.props.data.bigText;
         return (
             <div className="article">
             <p className="news_author">{author}: </p>
