@@ -31,6 +31,7 @@ var Article = React.createClass({
     var author = this.props.data.author;
     var text = this.props.data.text;
     var bigText = this.props.data.bigText;
+    <a href="#" className="news_readmore">Подробности</a>
         return (
             <div className="article">
             <p className="news_author">{author}: </p>
