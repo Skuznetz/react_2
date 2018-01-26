@@ -35,6 +35,7 @@ var Article = React.createClass({
             <div className="article">
             <p className="news_author">{author}: </p>
             <p className="news_text">{text}</p>
+            <p className="news_big-text">{bigtext}</p>
             </div>)
     }
 });
