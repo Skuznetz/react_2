@@ -21,9 +21,10 @@ var my_news = [{
 ];
 var Article = React.createClass({
     propsTypes: {
-        data: React.PropTypes.share({
+        data: React.PropTypes.shape({
             author: React.PropTypes.string.isRequired,
-            text: React.PropTypes.string.isRequired
+            text: React.PropTypes.string.isRequired,
+            bigText: React.PropTypes.string.isRequired
         })
     },
     render: function(){
