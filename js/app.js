@@ -1,7 +1,7 @@
 var my_news = [{
         author: 'Саша Пушкин',
         text: 'В четверг в четыре четверти часа',
-        bigTex: '4 черненьких чумазеньких чертёнка'
+        bigText: '4 черненьких чумазеньких чертёнка'
     },
     {
         author: 'Просто Петя',
@@ -27,6 +27,11 @@ var Article = React.createClass({
             bigText: React.PropTypes.string.isRequired
         })
     },
+    getInitialState: function(){
+        return {
+            visible: false
+        };
+},
     render: function(){
     var author = this.props.data.author;
     var text = this.props.data.text;
