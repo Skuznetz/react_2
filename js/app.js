@@ -41,7 +41,7 @@ var Article = React.createClass({
             <div className="article">
             <p className="news_author">{author}: </p>
             <p className="news_text">{text}</p>
-             <a href="#" className="news_readmore ">Подробности</a>
+             <a href="#" className={news_readmore " + (visible ? '' : 'none':'')}>Подробности</a>
 
             <p className="news_big-text">{bigText}</p>
             </div>)
