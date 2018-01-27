@@ -36,11 +36,13 @@ var Article = React.createClass({
     var author = this.props.data.author;
     var text = this.props.data.text;
     var bigText = this.props.data.bigText;
-    <a href="#" className="news_readmore">Подробности</a>
+       visible = this.state.visible;
         return (
             <div className="article">
             <p className="news_author">{author}: </p>
             <p className="news_text">{text}</p>
+             <a href="#" className="news_readmore ">Подробности</a>
+
             <p className="news_big-text">{bigText}</p>
             </div>)
     }
