@@ -54,6 +54,9 @@ var Article = React.createClass({
     }
 });
 var News = React.createClass({
+    getInitialState: function(){
+        return {counter: 0}
+    }
     render: function(){
         var data = this.props.data;
         var newsTamplate;
