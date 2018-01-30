@@ -79,7 +79,7 @@ var News = React.createClass({
                 return (
             <div className="news">
             {newsTamplate}
-            <strong className={'news_count ' + (data.length > 0 ? '' : 'none') onClick={this.onTotalNewsClick}}>Всего новостей: {data.length}</strong>
+            <strong className={'news_count ' + (data.length > 0 ? '' : 'none')} onClick={this.onTotalNewsClick}>Всего новостей: {data.length}</strong>
             </div>);
     }
 
