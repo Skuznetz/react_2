@@ -54,8 +54,8 @@ var Article = React.createClass({
     }
 });
 var News = React.createClass({
-    propsTypes: {
-        data: React.PropsTypes.array.isRequired
+    propTypes: {
+        data: React.PropTypes.array.isRequired
     },
     getInitialState: function(){
         return {counter: 0}
