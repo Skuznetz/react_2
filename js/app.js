@@ -93,7 +93,7 @@ var App = React.createClass({
     render: function(){
         return (
             <div className="app">
-            
+              <TestInput />
                  <h1>Новости</h1>
             <News data={my_news} />
             </div>);
