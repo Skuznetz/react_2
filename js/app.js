@@ -1,3 +1,8 @@
+var TestInput = React.createClass({
+  render (
+    <input className='test-input' value="Введите значение" />;)
+
+  });
 var my_news = [{
         author: 'Саша Пушкин',
         text: 'В четверг в четыре четверти часа',
@@ -88,6 +93,7 @@ var App = React.createClass({
     render: function(){
         return (
             <div className="app">
+            
                  <h1>Новости</h1>
             <News data={my_news} />
             </div>);
