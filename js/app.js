@@ -1,4 +1,7 @@
 var TestInput = React.createClass({
+    onChangeHandler: function(e){
+      this.setState({myValue: e.target.value})
+    },
   render (
     <input className='test-input' value="Введите значение" />;)
 
