@@ -5,10 +5,10 @@ var TestInput = React.createClass({
     getInitialState: function(){
         return {myValue: ''};
     },
-  render: function (){
     onBtnClickHandler: function(e){
       alert(this.state.myValue);
     },
+    render: function(){
   return (<div>
     <input className='test-input' value={this.state.myValue} 
     onChange={this.onChangeHandler} placeholder="введите значение" />
