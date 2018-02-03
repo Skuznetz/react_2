@@ -6,8 +6,12 @@ var TestInput = React.createClass({
         return {myValue: ''};
     },
   render: function (){
-  return (<input className='test-input' value={this.state.myValue} onChange={this.onChangeHandler} placeholder="введите значение" />);}
-
+  return (<div>
+    <input className='test-input' value={this.state.myValue} 
+    onChange={this.onChangeHandler} placeholder="введите значение" />
+    
+    </div>);}
+    
   });
 var my_news = [{
         author: 'Саша Пушкин',
