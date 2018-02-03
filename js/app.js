@@ -5,8 +5,8 @@ var TestInput = React.createClass({
     getInitialState: function(){
         return {myValue: ''};
     },
-  render (
-    <input className='test-input' value="Введите значение" />;)
+  render: function (){
+  return (<input className='test-input' value="Введите значение" />);}
 
   });
 var my_news = [{
