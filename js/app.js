@@ -6,7 +6,7 @@ var TestInput = React.createClass({
         return {myValue: ''};
     },
   render: function (){
-  return (<input className='test-input' value={this.state.myValue} onChange={this.onChangeHandler}/>);}
+  return (<input className='test-input' value={this.state.myValue} onChange={this.onChangeHandler} placeholder="введите значение" />);}
 
   });
 var my_news = [{
