@@ -1,7 +1,4 @@
 var TestInput = React.createClass({
-            onChangeHandler: function(e) {
-                this.setState({ myValue: e.target.value })
-            },
             getInitialState: function() {
                 return { myValue: '' };
             },
