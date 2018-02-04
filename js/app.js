@@ -1,7 +1,4 @@
 var TestInput = React.createClass({
-            getInitialState: function() {
-                return { myValue: '' };
-            },
             onBtnClickHandler: function(e) {
                 alert(this.state.myValue);
             },
