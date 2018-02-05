@@ -1,7 +1,8 @@
 var TestInput = React.createClass({
              componentDidMount(){
                 ReactDOM.findDOMNode(this.refs.myTestInput).focus();
-             },            onBtnClickHandler: function(e) {
+             },            
+             onBtnClickHandler: function(e) {
                 alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
                 console.log(this.refs);
             },
