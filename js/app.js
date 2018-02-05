@@ -1,6 +1,6 @@
 var TestInput = React.createClass({
             onBtnClickHandler: function(e) {
-                alert(this.state.myValue);
+                alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
             },
             render: function() {
                 return ( < div >
