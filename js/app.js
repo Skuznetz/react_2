@@ -8,7 +8,7 @@ var TestInput = React.createClass({
                     input className = 'test-input'
                     defaultValue='' placeholder = "введите значение" ref='myTestInput' />
                     <
-                    button onClick = { this.onBtnClickHandler } > Показать alert < /button> <
+                    button onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> <
                     /div>);}
 
                 });
