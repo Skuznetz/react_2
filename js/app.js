@@ -1,4 +1,4 @@
-var TestInput = React.createClass({
+var Add = React.createClass({
              componentDidMount(){
                 ReactDOM.findDOMNode(this.refs.myTestInput).focus();
              },            
