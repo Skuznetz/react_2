@@ -3,8 +3,7 @@ var Add = React.createClass({
                 ReactDOM.findDOMNode(this.refs.author).focus();
              },            
              onBtnClickHandler: function(e) {
-                alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
-                console.log(this.refs);
+                e.preventDefault();
             },
             render: function() {
                 return ( < div >
