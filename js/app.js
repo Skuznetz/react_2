@@ -10,6 +10,7 @@ var Add = React.createClass({
                     <
                     input type='text' className = 'add-author'
                     defaultValue='' placeholder = "введите Ваше Имя" ref='author' />
+                    <textarea ></textarea>
 
                     <
                     button className='add_btn' onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> </form>);}
