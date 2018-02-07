@@ -6,13 +6,12 @@ var Add = React.createClass({
                 e.preventDefault();
             },
             render: function() {
-                return ( < div >
+                return ( < form className= 'add-cf'>
                     <
                     input className = 'test-input'
                     defaultValue='' placeholder = "введите значение" ref='myTestInput' />
                     <
-                    button onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> <
-                    /div>);}
+                    button onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> </form>);}
 
                 });
             var my_news = [{
