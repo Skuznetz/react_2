@@ -1,6 +1,6 @@
 var Add = React.createClass({
              componentDidMount(){
-                ReactDOM.findDOMNode(this.refs.myTestInput).focus();
+                ReactDOM.findDOMNode(this.refs.author).focus();
              },            
              onBtnClickHandler: function(e) {
                 alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
