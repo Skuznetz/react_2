@@ -8,7 +8,7 @@ var Add = React.createClass({
             render: function() {
                 return ( < form className= 'add-cf'>
                     <
-                    input className = 'test-input'
+                    input type='text' className = 'add-author'
                     defaultValue='' placeholder = "введите значение" ref='myTestInput' />
                     <
                     button onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> </form>);}
