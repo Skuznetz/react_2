@@ -12,7 +12,7 @@ var Add = React.createClass({
                     defaultValue='' placeholder = "введите Ваше Имя" ref='author' />
                     <textarea className='add-text' defaultValue='' placeholder='Текст новости' ref='text'></textarea>
                     <label className='add_checkrule'>
-                    <input type="checkbox" /></label>
+                    <input type="checkbox" defaultChecked={false} /></label>
 
                     <
                     button className='add_btn' onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> </form>);}
