@@ -112,7 +112,7 @@ var Add = React.createClass({
                                                                     return ( <
                                                                         div className = "app" >
                                                                         <
-                                                                        TestInput / >
+                                                                        <Add /> 
                                                                         <
                                                                         h1 > Новости < /h1> <
                                                                         News data = { my_news }
