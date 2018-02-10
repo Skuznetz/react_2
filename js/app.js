@@ -1,4 +1,9 @@
 var Add = React.createClass({
+    getInitialState: function(){
+        return {
+            btnIsDisabled: true
+        };
+    },
              componentDidMount(){
                 ReactDOM.findDOMNode(this.refs.author).focus();
              },            
@@ -112,7 +117,7 @@ var Add = React.createClass({
                                                                 render: function() {
                                                                     return ( <
                                                                         div className = "app" >
-                                                                        <
+                                                                        
                                                                         <Add /> 
                                                                         <
                                                                         h1 > Новости < /h1> <
