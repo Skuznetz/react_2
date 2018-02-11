@@ -9,6 +9,9 @@ var Add = React.createClass({
              },            
              onBtnClickHandler: function(e) {
                 e.preventDefault();
+                var author=ReactDOM.findDOMNode(this.refs.author).value;
+                var text=ReactDOM.findDOMNode(this.refs.text).value;
+                alert(author + '\n'+ text);
             },
             onBtnClickRuleClick: function(e){
                 this.setState({btnIsDisabled: !this.state.btnIsDisabled});
