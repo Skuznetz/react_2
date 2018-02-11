@@ -24,7 +24,7 @@ var Add = React.createClass({
                     <input type="checkbox" ref="checkrule" onChange={this.onCheckRuleClick} />Я согласен с правилами</label>
 
                     <
-                    button className='add_btn' onClick = { this.onBtnClickHandler } ref='alert_button' > Показать alert < /button> </form>);}
+                    button className='add_btn' onClick = { this.onBtnClickHandler } ref='alert_button' disabled={this.state.btnIsDisabled} > Показать alert < /button> </form>);}
 
                 });
             var my_news = [{
