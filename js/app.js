@@ -1,7 +1,9 @@
 var Add = React.createClass({
     getInitialState: function(){
         return {
-            btnIsDisabled: true
+            agreeNotChecked: true,
+            authorIsEmpty: true,
+            testIsEmpty: true
         };
     },
              componentDidMount(){
