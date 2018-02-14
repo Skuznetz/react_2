@@ -17,6 +17,18 @@ var Add = React.createClass({
             })
         }
     },
+    onTextChange: function(e){
+        if (e.target.value.trim().length > 0){
+            this.setState({
+                textIsEmpty: false
+            
+            } else {
+
+                this.setState({
+                    textIsEmpty: true
+                })
+            }
+            },
              componentDidMount(){
                 ReactDOM.findDOMNode(this.refs.author).focus();
              },            
