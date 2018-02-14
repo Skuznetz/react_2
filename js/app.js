@@ -6,6 +6,17 @@ var Add = React.createClass({
             testIsEmpty: true
         };
     },
+    onAuthorChange: function(e){
+        if (e.target.value.trim().length > 0){
+            this.setState({
+                authorIsEmpty: false
+            })
+        } else {
+            this.setState({
+                authorIsEmpty: true
+            })
+        }
+    },
              componentDidMount(){
                 ReactDOM.findDOMNode(this.refs.author).focus();
              },            
