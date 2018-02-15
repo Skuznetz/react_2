@@ -42,6 +42,11 @@ var Add = React.createClass({
                 this.setState({btnIsDisabled: !this.state.btnIsDisabled});
 
             },
+            onCheckRuleClick: function(e){
+                this.setState({
+                    agreeNotChecked: !this.stateagreeNotChecked
+                });
+            },
             render: function() {
                 return ( < form className= 'add-cf'>
                     <
