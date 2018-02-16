@@ -47,6 +47,17 @@ var Add = React.createClass({
                     agreeNotChecked: !this.stateagreeNotChecked
                 });
             },
+            obFieldChange: function(fieldName,e){
+                if (e.target.value.trim().length > 0){
+                    this.setState({
+                        ['' + fieldName] : false
+                    })
+                } else {
+                    this.setState({
+                        ['' + fieldName] : true
+                    })
+                }
+            },
             render: function() {
                 return ( < form className= 'add-cf'>
                     <
