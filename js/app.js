@@ -38,10 +38,7 @@ var Add = React.createClass({
                 var text=ReactDOM.findDOMNode(this.refs.text).value;
                 alert(author + '\n'+ text);
             },
-            onBtnClickRuleClick: function(e){
-                this.setState({btnIsDisabled: !this.state.btnIsDisabled});
-
-            },
+        
             onCheckRuleClick: function(e){
                 this.setState({
                     agreeNotChecked: !this.state.agreeNotChecked
