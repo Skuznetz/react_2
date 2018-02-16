@@ -56,6 +56,9 @@ var Add = React.createClass({
                 }
             },
             render: function() {
+                var agreeNotChecked = this.state.agreeNotChecked,
+                    authorIsEmpty = this.state.authorIsEmpty,
+                    textIsEmpty = this.state.textIsEmpty;
                 return ( < form className= 'add-cf'>
                     <
                     input type='text' onChange={this.onFieldChange.bind(this,'authorIsEmpty')} className = 'add-author'
