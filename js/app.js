@@ -47,7 +47,7 @@ var Add = React.createClass({
                     agreeNotChecked: !this.stateagreeNotChecked
                 });
             },
-            obFieldChange: function(fieldName,e){
+            onFieldChange: function(fieldName,e){
                 if (e.target.value.trim().length > 0){
                     this.setState({
                         ['' + fieldName] : false
