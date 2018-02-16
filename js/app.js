@@ -44,7 +44,7 @@ var Add = React.createClass({
             },
             onCheckRuleClick: function(e){
                 this.setState({
-                    agreeNotChecked: !this.stateagreeNotChecked
+                    agreeNotChecked: !this.state.agreeNotChecked
                 });
             },
             onFieldChange: function(fieldName,e){
