@@ -61,7 +61,7 @@ var Add = React.createClass({
                     textIsEmpty = this.state.textIsEmpty;
                 return ( < form className= 'add-cf'>
                     <
-                    input type='text' onChange={this.onFieldChange.bind(this,'authorIsEmpty')} className = 'add-author'
+                    input type='text' onChange={this.onFieldChange.bind(this,'authorIsEmpty')} className = 'add_author'
                      placeholder = "введите Ваше Имя" ref='author' />
                     <textarea onChange={this.onFieldChange.bind(this,'textIsEmpty')} className='add_text' defaultValue='' placeholder='Текст новости' ref='text'></textarea>
                     <label className='add_checkrule'>
