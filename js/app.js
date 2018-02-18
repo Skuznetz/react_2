@@ -176,6 +176,7 @@ var Add = React.createClass({
                                                         
 
                                                                 render: function() {
+                                                                    console.log('render');
                                                                     return ( <
                                                                         div className = "app" >
                                                                         
