@@ -183,7 +183,7 @@ var Add = React.createClass({
                                                                         <Add /> 
                                                                         <
                                                                         h1 > Новости < /h1> <
-                                                                        News data = { my_news }
+                                                                        News data = { this.state.news }
                                                                         /> <
                                                                         /div>);
                                                                     }
