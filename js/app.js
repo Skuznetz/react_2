@@ -164,8 +164,10 @@ var Add = React.createClass({
                                                     var App = React.createClass({
                                                         getInitialState: function(){
                                                             return {news: my_news};
-                                                        },
+                                                        }
+                                                        componentDidMount: function(){
 
+                                                        },
                                                                 render: function() {
                                                                     return ( <
                                                                         div className = "app" >
