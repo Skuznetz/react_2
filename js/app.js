@@ -37,7 +37,8 @@ var Add = React.createClass({
         e.preventDefault();
         var author = ReactDOM.findDOMNode(this.refs.author).value;
         var text = ReactDOM.findDOMNode(this.refs.text).value;
-        var item = [{author: author,text: text,bigText: '...'}]
+        var item = [{author: author,text: text,bigText: '...'}];
+        window.ee.emit('News.add',item);
     },
 
     onCheckRuleClick: function(e) {
