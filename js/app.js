@@ -106,6 +106,7 @@ var my_news = [{
         bigText: 'Кому сколько -5-00'
     }
 ];
+window.ee = newEventEmitter();
 var Article = React.createClass({
     propsTypes: {
         data: React.PropTypes.shape({
