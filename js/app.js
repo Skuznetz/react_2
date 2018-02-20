@@ -37,7 +37,7 @@ var Add = React.createClass({
         e.preventDefault();
         var author = ReactDOM.findDOMNode(this.refs.author).value;
         var text = ReactDOM.findDOMNode(this.refs.text).value;
-        
+        var item = [{author: author,text: text,bigText: '...'}]
     },
 
     onCheckRuleClick: function(e) {
