@@ -180,7 +180,11 @@ var News = React.createClass({
                                 return { news: my_news };
                             },
                             componentDidMount: function() {
-
+                                var self =this;
+                                window.ee.addListener('Node.add',function(item){
+                                    var nextNews= item.concat(self.state.news);
+                                    self.setState({news: nextNews});
+                                });
                             },
                             componentWillUnmount: function() {},
 
