@@ -186,7 +186,9 @@ var News = React.createClass({
                                     self.setState({news: nextNews});
                                 });
                             },
-                            componentWillUnmount: function() {},
+                            componentWillUnmount: function() {
+                                window.ee.removeListener('News.add');
+                            },
 
 
 
