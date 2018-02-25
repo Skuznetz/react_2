@@ -35,10 +35,13 @@ var Add = React.createClass({
     },
     onBtnClickHandler: function(e) {
         e.preventDefault();
+        var textEl = ReactDOM.findNode(this.refs.text);
         var author = ReactDOM.findDOMNode(this.refs.author).value;
         var text = ReactDOM.findDOMNode(this.refs.text).value;
         var item = [{author: author,text: text,bigText: '...'}];
         window.ee.emit('News.add',item);
+        textEl.value = '';
+        this.setState({textIsEmpty: true});
     },
 
     onCheckRuleClick: function(e) {
