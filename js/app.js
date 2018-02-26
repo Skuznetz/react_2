@@ -38,10 +38,10 @@ var Add = React.createClass({
         var textEl = ReactDOM.findNode(this.refs.text);
         var author = ReactDOM.findDOMNode(this.refs.author).value;
         var text = ReactDOM.findDOMNode(this.refs.text).value;
-        var item = [{author: author,text: text,bigText: '...'}];
-        window.ee.emit('News.add',item);
+        var item = [{ author: author, text: text, bigText: '...' }];
+        window.ee.emit('News.add', item);
         textEl.value = '';
-        this.setState({textIsEmpty: true});
+        this.setState({ textIsEmpty: true });
     },
 
     onCheckRuleClick: function(e) {
@@ -139,14 +139,14 @@ var Article = React.createClass({
             p className = "news_author" > { author }: < /p> <
             p className = "news_text" > { text } < /p> { / * для ссылки readmore: не показывай ссылку, если visible === true * / } <
             a href = "#"
-            onClick = { this.readmoreClick } className = { 'news__readmore ' + (visible ? 'none' : '') } > Подробнее < /a > { /* для большо текста: не показывай текст, если visible === false */ } <
+            onClick = { this.readmoreClick } className = { 'news__readmore ' + (visible ? 'none' : '') } > Подробнее < /a > { / * для большо текста: не показывай текст, если visible === false * / } <
             p className = { 'news__big-text ' + (visible ? '' : 'none') } > { bigText } < /p> < /
             div > )
     }
 });
 var News = React.createClass({
-    propTypes: {
-        data: React.PropTypes.array.isRequired
+            propTypes: {
+                data: React.PropTypes.array.isRequired
             },
             getInitialState: function() {
                 return { counter: 0 }
@@ -183,10 +183,10 @@ var News = React.createClass({
                                 return { news: my_news };
                             },
                             componentDidMount: function() {
-                                var self =this;
-                                window.ee.addListener('Node.add',function(item){
-                                    var nextNews= item.concat(self.state.news);
-                                    self.setState({news: nextNews});
+                                var self = this;
+                                window.ee.addListener('Node.add', function(item) {
+                                    var nextNews = item.concat(self.state.news);
+                                    self.setState({ news: nextNews });
                                 });
                             },
                             componentWillUnmount: function() {
